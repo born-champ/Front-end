@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        do {
+            var choice=prompt("Enter choice ");
+            switch (eval(choice)) {
+                case 1:
+                    var a=prompt("enter number 1");
+                    var b=prompt("enter number 2")
+                    var sum=eval(a)+eval(b);
+                    alert("sum is " +sum )
+                    break;
+                case 2:
+                    var a=prompt("enter number 1");
+                    var b=prompt("enter number 2")
+                    var sub=Maths.abs(eval(a)-eval(b));
+                    alert("sub is " +sub )
+
+                    
+                    break;
+            
+                default:
+                    alert("wrong choice")
+                    break;
+            }
+            var nextInput=confirm("do you want to continue");
+
+        } while (nextInput);
+    </script>
+    
+</body>
+</html>

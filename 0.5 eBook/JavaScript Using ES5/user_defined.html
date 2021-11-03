@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript"> 
+    function info() {
+        alert("welcome")
+    }
+    function add(a,b) {
+        var sum=a+b;
+        alert("sum is " +sum)
+        
+    }
+    function empInfo(id,name,salary) 
+    {
+        if (id==1) {
+            return salary+5000;
+            
+        }else if(id==2){
+            return salary+3000;
+        }else{
+            return salary;
+        }
+        
+    }
+    function sayHello() {
+        return "welcome to js"
+        
+    }
+    </script>
+</head>
+<body>
+    <script>
+        info();
+        add(10,20);
+        var result=empInfo(3,"Raj", 20000)
+        alert(result);
+        var res=sayHello();
+        alert(res);
+        
+    </script>
+    
+</body>
+</html>

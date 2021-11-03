@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script type="text/JavaScript"> 
+        function info() {
+            alert("welcome")
+        }
+        </script> -->
+
+        
+    <script>
+        function add() {
+            
+      
+        var a = document.getElementById("txt1").value;
+        var b = document.getElementById("txt2").value;
+        var sum = parseInt(a) + parseInt(b);
+        document.getElementById("result").innerHTML=sum;
+        reset();
+    }
+    function mySub() {
+            
+      
+            var a=parseInt(document.getElementById("txt1").value);
+            var b=parseInt(document.getElementById("txt2").value);
+            var sub=a-b;
+            document.getElementById("result").innerHTML=sub;
+            reset();
+        }
+        function reset(){
+            document.getElementById("txt1").value="";
+            document.getElementById("txt2").value="";
+
+        }
+
+
+        </script>
+    
+</head>
+<body>
+
+
+    <!-- <input type="button" value="click me" onclick="info()"/> -->
+    <h1>Simple Calcular</h1>
+
+    <label>Enter number</label>
+    <input type="text" id="txt1" name="text1"/>
+    <br/>
+    <label>Enter number</label>
+    <input type="text" id="txt2" name="text2"/>
+    <br/>
+
+    <label for="Result">Result: </label>
+    <p id="result" ></p>
+    <br/>
+     <button onclick="add()">add</button> 
+     <input type="button" value="sub" onclick="mySub()"/>
+
+    
+</body>
+</html>
